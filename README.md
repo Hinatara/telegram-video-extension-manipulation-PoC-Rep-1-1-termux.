@@ -1,7 +1,7 @@
 
 
 # telegram-video-extension-manipulation-PoC
-Telegram video (mp4) extension manipulation PoC
+New Telegram video (mp4) extension manipulation PoC
 blog: https://cti.monster/blog/2025/03/04/evilloader.html
 
 

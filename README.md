@@ -5,5 +5,5 @@ Telegram video (mp4) extension manipulation PoC
 blog: https://cti.monster/blog/2025/03/04/evilloader.html
 
 
-scenario: Uploading telegramvideoexploit.mp4…
+Uploading telegramvideoexploit.mp4…
 

@@ -1,12 +1,4 @@
+# This is a 1:1 Meeting Minutes Transcript of the Repository (https://github.com/0x6rss/telegram-video-extension-manipulation-PoC)
+## Rewritten to run seamlessly on Termux without errors!  
 
-
-# telegram-video-extension-manipulation-PoC
-New Telegram video (mp4) extension manipulation PoC
-blog: https://cti.monster/blog/2025/03/04/evilloader.html
-
-
-
-
-
-https://github.com/user-attachments/assets/7df2ef86-066a-4c8b-8a94-c34691701b91
-
+**Don't forget to give the original repository a star ⭐—this version exists thanks to it!**  

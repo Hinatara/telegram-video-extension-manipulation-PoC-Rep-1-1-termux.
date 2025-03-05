@@ -1,4 +1,4 @@
-// for ip logger scenario (optional)
+# for ip logger scenario (optional)
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS
@@ -22,8 +22,7 @@ def log_ip():
         if ip_address:
             log_entry = f"IP: {ip_address} | Country: {country} | Region: {region} | City: {city} | ISP: {isp}\n"
 
-
-            with open("ip_log.txt", "a") as file:
+            with open("/data/data/com.termux/files/home/ip_log.txt", "a") as file:
                 file.write(log_entry)
 
             print("Logged:", log_entry)  

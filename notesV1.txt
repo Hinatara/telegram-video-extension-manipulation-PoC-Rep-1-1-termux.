@@ -1,0 +1,5 @@
+#Please modify the path for the IP log file.
+"""""""
+with open("/data/data/com.termux/files/home/ip_log.txt", "a") as file:
+    file.write(log_entry)
+""""""""
